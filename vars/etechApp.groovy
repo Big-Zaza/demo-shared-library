@@ -26,7 +26,7 @@ def call(String repoUrl){
            }
            stage("Anthony") {
                steps {
-                   sh 'htop'
+                   sh 'df -h'
                }
            }
            stage("Ntui") {
@@ -36,7 +36,7 @@ def call(String repoUrl){
            }
            stage("Uche") {
                steps {
-                   sh 'df -h'
+                   echo 'hello'
                }
            }
        }
