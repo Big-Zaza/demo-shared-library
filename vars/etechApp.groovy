@@ -31,12 +31,12 @@ def call(String repoUrl){
            }
            stage("Ntui") {
                steps {
-                   sh 'll -lh'
+                   sh 'htop'
                }
            }
            stage("Uche") {
                steps {
-                   sh 'll -lh'
+                   sh 'lsblk'
                }
            }
        }
