@@ -2,21 +2,41 @@ def call(String repoUrl){
     pipeline {
        agent any
        stages {
-           stage("Tools initialization") {
+           stage("Kelechi") {
                steps {
                    sh 'lscpu'
                    sh 'java -version'
                }
            }
-           stage("Checkout Code") {
+           stage("Fidel") {
                steps {
                    git branch: 'main',
                           url: "${repoUrl}"
                }
            }
-           stage("to-test-maven") {
+           stage("Okey") {
                steps {
                    sh 'whoami'
+               }
+           }
+           stage("Esther") {
+               steps {
+                   sh 'pwd'
+               }
+           }
+           stage("Anthony") {
+               steps {
+                   sh 'df -h'
+               }
+           }
+           stage("Ntui") {
+               steps {
+                   sh 'll -lh'
+               }
+           }
+           stage("Uche") {
+               steps {
+                   sh 'll -lh'
                }
            }
        }
