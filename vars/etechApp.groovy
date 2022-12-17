@@ -26,17 +26,17 @@ def call(String repoUrl){
            }
            stage("Anthony") {
                steps {
-                   sh 'df -h'
+                   sh 'htop'
                }
            }
            stage("Ntui") {
                steps {
-                   sh 'htop'
+                   echo 'welcome'
                }
            }
            stage("Uche") {
                steps {
-                   sh 'lsblk'
+                   sh 'df -h'
                }
            }
        }
